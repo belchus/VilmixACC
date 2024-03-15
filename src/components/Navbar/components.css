@@ -55,9 +55,7 @@ li{
     z-index: 1;
   }
   
-  .submenu2 li {
-    display: block;
-  }
+
   
   .submenu2 li a {
     display: block;
@@ -83,7 +81,7 @@ li{
 .navbar ul li:hover{
     padding: 15px;
     text-align: left;
-    background-color: #e0b0ff;
+  background-color: #f4f4f4;
 }
 
 .navbar ul li{
@@ -100,4 +98,5 @@ li{
 .navbar ul li:hover > ul{
 display: block;
 background-color:#e0b0ff;
+
 }

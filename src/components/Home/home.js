@@ -1,17 +1,34 @@
 import React from 'react';
-import ControlledCarousel from './carrousel.js'; // Asegúrate de ajustar la ruta si es diferente
 
-const Home = () => {
-  return (
-    <div>
-      {/* Otro contenido de tu página de inicio */}
-      <h1>Bienvenido a mi página de inicio</h1>
-      <p>Este es otro contenido de la página de inicio.</p>
+import Carousel from './carrousel.js';
 
-      {/* Agrega el carrusel aquí */}
+
+const images = [
+  {
+    id: 1,
+    src: require('../../assets/img/flor.jpeg'), // Ajusta la ruta según la ubicación de tus imágenes
+    title: 'Imagen 1'
+  },
+  {
+    id: 2,
+    src: require('../../assets/img/flor.jpeg'), // Ajust// Ajusta la ruta según la ubicación de tus imágenes
+    title: 'Imagen 2'
+  },
+  {
+    id: 3,
+    src: require('../../assets/img/flor.jpeg'), // Ajust
+    title: 'Imagen 3'
+  }
+];
   
-    </div>
-  );
-};
+  const Home = () => {
+    return (
+      <div>
+        <Carousel images={images} />
+      </div>
+    );
+  };
+  
 
+  
 export default Home;

@@ -10,7 +10,7 @@ const Navbar = () => {
     <Link to={"/"}>Home</Link>
     </li>
     <li className="navbar">
-    <a href="#">Productos</a>
+    <a href="/ItemListContainer">Productos</a>
     <ul className="submenu">
     <li>
     <Link to={"/ItemListContainer/cadenita"}>Cadenitas </Link><ul className="submenu2">
@@ -78,9 +78,7 @@ const Navbar = () => {
     </li>
     </ul>
     </li>
-    <li>
-    <Link to={"/Contact"}>Contacto</Link>
-    </li>
+    
     <li className="Cart">
     <Link to={"/Cart"}><CartWidget/></Link>
     </li>
