@@ -10,6 +10,7 @@ import CartProvider from './context/CartContext';
 import Checkout from './components/Checkout/Checkout.js';
 import Contact from './components/Contact/Contact';
 import Home from './components/Home/home.js';
+import Footer from './components/Footer/footer.js';
 function App() {
   return (
     <div className="App">
@@ -24,8 +25,8 @@ function App() {
       <Route path='/Item/:Id' element={<ItemDetailContainer/>}/>
       <Route path='/Cart' element={<Cart/>}/>
       <Route path="/Checkout" element={<Checkout/>}/>
-      <Route path="/Contact" element={<Contact/>}/>
-     
+      <Route path="/Contact" element={<Footer/>}/>
+
     </Routes>
     </CartProvider>
   </BrowserRouter>
